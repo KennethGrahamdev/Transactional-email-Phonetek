@@ -101,12 +101,56 @@
     <style>
         @media screen and (max-width: 499.98px) {
             /* General styling */
-            .items-col {
+            .col {
                 display: block!important;
                 width: 100%!important;
             }
-
+            .section-head {
+                text-align: center!important;
+            }
+            .price-container,.bill-container, 
+            .spacer, .help-container,.nav-container, 
+            .contact-container,.footer-container {
+                padding: 14px 28px!important;
+            }
             /* Section styling */
+            .order-head {
+                padding: 28px 28px 14px!important;
+            }
+            .order-text {
+                padding: 14px 28px!important;
+            }
+            .items-container {
+                padding: 14px 28px!important;
+            }
+            .items-col, .details-col {
+                display: block!important;
+                width: 100%!important;
+            }
+            .items-col {
+                text-align: center!important;
+                padding: 0!important;
+            }
+            .item-img {
+                width: 240px!important;
+                max-width: 240px!important;
+            }
+            .payment-container {
+                padding: 14px 28px 32px 28px!important; }
+            .bill-head, .contact-content {
+                text-align: center!important;
+                width: 490px!important;
+                max-width: 490px!important;
+            }
+            .bill-text {
+                text-align: center!important;
+                width: 408px!important;
+                max-width: 408px!important;
+            }
+
+            .bottom {
+                padding-bottom: 26px!important;
+            }
         }
     </style>
     <style>
@@ -196,14 +240,14 @@
                                         <td style="text-align:center;background-color: #ffffff;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
-                                                    <td style="text-align:center;padding: 26px 52px 14px;">
-                                                        <h1 style="Margin-top: 0;font-size: 28px;line-height: 36px;color: #333;font-weight: 700;font-family: 'Playfair', serif;">
+                                                    <td class="order-head" style="text-align:center;padding: 28px 52px 14px;">
+                                                        <h1 style="Margin: 0;font-size: 28px;line-height: 36px;color: #333;font-weight: 700;font-family: 'Playfair', serif;">
                                                             Order Confirmation
                                                         </h1>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align:center;padding: 14px 52px;">
+                                                    <td class="order-text" style="text-align:center;padding: 14px 52px;">
                                                         <p style="Margin-top: 0;font-size: 16px;line-height: 24px;color: #333;font-weight: 400;font-family: 'Karla', sans-serif;">
                                                             Hey Tony,
                                                         </p>
@@ -216,7 +260,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align: center;padding: 14px 52px;">
+                                                    <td class="order-text" style="text-align: center;padding: 14px 52px;">
                                                         <h2 style="Margin: 0;font-size: 20px;line-height: 26px;color: #333;font-weight: 600;font-family: 'Karla', sans-serif;">
                                                             ORDER NO. 523980948
                                                         </h2>
@@ -237,10 +281,10 @@
                             <td>
                                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="background-color: #ffffff;padding: 14px 52px;">
+                                        <td class="items-container" style="background-color: #ffffff;padding: 14px 52px;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
-                                                    <td style="text-align:left;padding-bottom: 10px;">
+                                                    <td class="section-head" style="text-align:left;padding-bottom: 10px;">
                                                         <h2 style="Margin: 0;font-size: 16px;line-height: 20px;color: #535353;font-weight: 600;font-family: 'Karla', sans-serif;text-transform: capitalize;">
                                                             ITEMS ORDERDED
                                                         </h2>
@@ -251,17 +295,17 @@
                                                     <td style="border-top: #777777 solid 2px;border-bottom: #777777 solid 2px;">
                                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;">
                                                             <tr>
-                                                                <td style="text-align:center;background-color: #ffffff;padding: 10px 0px;">
+                                                                <td style="text-align:center;background-color: #ffffff;padding: 14px 0px;">
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
                                                                         style="max-width: 600px;">
                                                                         <tr>
-                                                                            <td class="items-col" style="text-align: left;width: 20%;padding: 14px 14px 14px 0px;">
+                                                                            <td class="items-col" style="text-align: left;width: 20%;">
                                                                                 <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                                                    <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Phonetek/imgs/airpods.png" alt="A pair of Apple Airpods." width="140"
+                                                                                    <img class="item-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Phonetek/imgs/airpods.png" alt="A pair of Apple Airpods." width="140"
                                                                                         style="vertical-align: middle;width: 140px;max-width: 140px;height: auto;color: #777;font-size: 20px;">
                                                                                 </a>
                                                                             </td>
-                                                                            <td class="items-col" style="width: 80%;text-align: left;">
+                                                                            <td class="details-col" style="width: 80%;text-align: left;">
                                                                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                                                     <tr>
                                                                                         <td style="text-align:left;">
@@ -303,17 +347,17 @@
                                                     <td style="border-bottom: #777777 solid 2px;">
                                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;">
                                                             <tr>
-                                                                <td style="text-align:center;background-color: #ffffff;padding: 10px 0px;">
+                                                                <td style="text-align:center;background-color: #ffffff;padding: 14px 0px;">
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
                                                                         style="max-width: 600px;">
                                                                         <tr>
-                                                                            <td class="items-col" style="text-align: left;width: 20%;padding: 14px 14px 14px 0px;">
+                                                                            <td class="items-col" style="text-align: left;width: 20%;">
                                                                                 <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                                                    <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Phonetek/imgs/case.png" alt="A iPhone 14 clear case." width="140"
+                                                                                    <img class="item-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Phonetek/imgs/case.png" alt="A iPhone 14 clear case." width="140"
                                                                                         style="vertical-align: middle;width: 140px;max-width: 140px;height: auto;color: #777;font-size: 20px;">
                                                                                 </a>
                                                                             </td>
-                                                                            <td class="items-col" style="width: 80%;text-align: left;">
+                                                                            <td class="details-col" style="width: 80%;text-align: left;">
                                                                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                                                     <tr>
                                                                                         <td style="text-align:left;">
@@ -362,7 +406,7 @@
                             <td>
                                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="text-align:center;background-color: #ffffff;padding: 0px 52px;">
+                                        <td class="price-container" style="text-align:center;background-color: #ffffff;padding: 0px 52px;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
                                                     <td style="text-align:left;width: 80%;vertical-align: top;padding: 6px 0px;">
@@ -424,10 +468,10 @@
                             <td>
                                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="text-align:center;background-color: #ffffff;padding: 40px 52px 40px 52px;">
+                                        <td class="payment-container" style="text-align:center;background-color: #ffffff;padding: 40px 52px 40px 52px;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
-                                                    <td style="text-align:left;padding: 14px 0px;vertical-align: middle;">
+                                                    <td class="section-head" style="text-align:left;padding: 14px 0px;vertical-align: middle;">
                                                         <h2 style="Margin: 0;font-size: 16px;line-height: 20px;color: #535353;font-weight: 600;font-family: 'Karla', sans-serif;text-transform: capitalize;">
                                                             PAYMENT INFO
                                                         </h2>
@@ -441,7 +485,7 @@
                                                     </td>
                                                     <td style="text-align:left;vertical-align: middle;width: 55%;">
                                                         <span style="text-decoration: none;Margin: 0;font-size: 16px;line-height: 26px;color: #333333;font-weight: 600;font-family: 'Karla', sans-serif;">
-                                                            Visa (************9010)
+                                                            &nbsp;(************9010)
                                                         </span>
                                                     </td>
                                                     <td style="text-align:right;vertical-align: middle;width: 35%;">
@@ -459,20 +503,20 @@
                         <!-- Payment end -->
                         <!-- Billing & shipping start -->
                         <tr>
-                            <td style="text-align:center;background-color: #ffffff;padding: 14px 52px;">
+                            <td class="bill-container" style="text-align:center;background-color: #ffffff;padding: 14px 52px;">
                                 <table class="column-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td>
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;vertical-align: top">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;vertical-align: top">
                                                 <tr>
-                                                    <td valign="top" style="text-align:left;width: 238px;max-width: 238px;vertical-align: top;padding-bottom: 10px;">
+                                                    <td class="bill-head" valign="top" style="text-align:left;width: 238px;max-width: 238px;vertical-align: top;padding-bottom: 10px;">
                                                         <h2 style="Margin: 0;font-size: 16px;color: #535353;font-weight: 600;font-family: 'Karla', sans-serif;text-transform: capitalize;">
                                                             BILLING ADDRESS
                                                         </h2>       
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td valign="top" style="text-align:left;width: 238px;max-width: 238px;vertical-align: top;">
+                                                    <td class="bill-text bottom" valign="top" style="text-align:left;width: 238px;max-width: 238px;vertical-align: top;">
                                                         <p style="Margin: 0;font-size: 16px;line-height: 36px;color: #333;font-weight: 400;font-family: 'Karla', sans-serif;">
                                                             Tony Pollard <br> 70 E Barclay St <br> Modesto, CA <br> 95313 <br> United States <br>
                                                             <a href="mailto:" target="_blank" style="text-decoration: none;color: #074354;">TP2000@yahoo.com</a> 
@@ -480,16 +524,16 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;vertical-align: top;">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;vertical-align: top;">
                                                 <tr>
-                                                    <td valign="top" style="text-align:right;width: 238px;max-width: 238px;vertical-align: top;padding-bottom: 10px;">
+                                                    <td class="bill-head" valign="top" style="text-align:right;width: 238px;max-width: 238px;vertical-align: top;padding-bottom: 10px;">
                                                         <h2 style="Margin: 0;font-size: 16px;color: #535353;font-weight: 600;font-family: 'Karla', sans-serif;text-transform: capitalize;">
                                                             SHIPPING ADDRESS
                                                         </h2>       
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td valign="top" style="text-align:right;width: 238px;max-width: 238px;vertical-align: top;">
+                                                    <td class="bill-text" valign="top" style="text-align:right;width: 238px;max-width: 238px;vertical-align: top;">
                                                         <p style="Margin: 0;font-size: 16px;line-height: 36px;color: #333;font-weight: 400;font-family: 'Karla', sans-serif;">
                                                             Tony Pollard <br> 70 E Barclay St <br> Modesto, CA <br> 95313 <br> United States
                                                         </p> 
@@ -504,8 +548,8 @@
                         <!-- Billing & shipping end -->
                         <!-- Divider start -->
                         <tr>
-                            <td style="background-color: #ffffff;padding: 26px 52px;">
-                                <div class="spacer"
+                            <td class="spacer" style="background-color: #ffffff;padding: 26px 52px;">
+                                <div 
                                     style="line-height:2px; height:2px;background-color: #777777;mso-line-height-rule:exactly;">&#8202;</div>
                             </td>
                         </tr>
@@ -515,7 +559,7 @@
                             <td>
                                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="text-align:center;background-color: #ffffff;padding: 26px 52px;">
+                                        <td class="help-container" style="text-align:center;background-color: #ffffff;padding: 26px 52px;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
                                                     <td style="text-align:center;">
@@ -538,7 +582,7 @@
                             <td>
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;">
                                     <tr>
-                                        <td style="text-align:center;background-color: #ffffff;padding: 26px;">
+                                        <td class="nav-container" style="text-align:center;background-color: #ffffff;padding: 26px;">
                                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
                                                 style="max-width: 600px;">
                                                 <tr>
@@ -569,20 +613,20 @@
                         <!-- Navigation bar end -->
                         <!-- Contact columns start -->
                         <tr>
-                            <td style="text-align:center;background-color: #ffffff;padding: 14px 52px;">
+                            <td class="contact-container"style="text-align:center;background-color: #ffffff;padding: 14px 52px;">
                                 <table class="column-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;border-top: solid #777777 2px;border-bottom: solid #777777 2px;">
                                     <tr>
                                         <td>
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;vertical-align: top">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;vertical-align: top">
                                                 <tr>
-                                                    <td valign="top" style="text-align:center;width: 238px;max-width: 238px;vertical-align: top;padding: 26px 0px 10px 0px;">
+                                                    <td class="contact-content" valign="top" style="text-align:center;width: 238px;max-width: 238px;vertical-align: top;padding: 26px 0px 10px 0px;">
                                                         <p style="Margin: 0;font-size: 16px;line-height: 24px;color: #333;font-weight: 400;font-family: 'Karla', sans-serif;">
                                                             Want to connect?
                                                         </p>       
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding-bottom: 26px;">
+                                                    <td class="contact-content" style="padding-bottom: 26px;">
                                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 136px;">
                                                             <tr>
                                                                 <td style="text-align: center;display: inline-block;">
@@ -608,9 +652,9 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;vertical-align: top;">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;vertical-align: top;">
                                                 <tr>
-                                                    <td valign="top" style="text-align:center;width: 238px;max-width: 238px;vertical-align: top;padding-top: 26px;">
+                                                    <td class="contact-content bottom" valign="top" style="text-align:center;width: 238px;max-width: 238px;vertical-align: top;padding-top: 26px;">
                                                         <span style="Margin-top: 0;font-size: 16px;line-height: 24px;color: #333;font-weight: 400;font-family: 'Karla', sans-serif;">
                                                             Phonetek<br>4556 Imperial Blvd<br>Plano, TX 75023
                                                         </span>       
@@ -628,7 +672,7 @@
                             <td>
                                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="text-align:center;background-color: #ffffff;padding: 26px 52px;">
+                                        <td class="footer-container" style="text-align:center;background-color: #ffffff;padding: 26px 52px;">
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
                                                     <td style="text-align:center;font-size: 14px;line-height: 18px;font-weight: 400;font-family: 'Karla', sans-serif;">
